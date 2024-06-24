@@ -1,4 +1,4 @@
-# Bash commands and output:
+# Bash commands and output
 
 `node -v`
 
