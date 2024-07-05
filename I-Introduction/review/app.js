@@ -22,6 +22,12 @@ if (new Date().getSeconds() % 7 === 0) {  // evals true every second that is div
 }
 
 // Use os.freemem() to check how much free system memory is available in the learning environment.
-console.log(`Free Memory: ${os.freemem()} bytes, or ${os.freemem()/1024} kilobytes, or ${os.freemem()/1024/1024} megabytes, or ${os.freemem()/1024/1024/1024} gigabytes`);
+const memBytes = `${os.freemem()} bytes`
+const memKBytes = `${os.freemem()/1024} kilobytes`
+const memMBytes = `${os.freemem()/1024/1024} megabytes`
+const memGBytes = `${os.freemem()/1024/1024/1024} gigabytes`
+console.log(`Free Memory: ${memBytes}, or ${memKBytes}, or ${memMBytes}, or ${memGBytes}`);
 
 // Use util.format() to log a formatted object to the terminal.
+let myArray = ['one', 'two', 'three']
+console.log(util.format('1- %s\n2- %s\n3- %s', ...myArray))
