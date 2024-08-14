@@ -9,4 +9,5 @@ let errorFirstCallback = (err, data) => {
   }
 };
 
-api.errorProneAsyncApi('just input', errorFirstCallback);
+api.errorProneAsyncApi('problematic input', errorFirstCallback);
+//api.errorProneAsyncApi('just input', errorFirstCallback);
